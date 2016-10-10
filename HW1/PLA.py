@@ -78,7 +78,7 @@ def PLA(N, debug=False):
 
     #calculate P(f(x) != g(x))
     numPoints = 1000
-    numError = 0;
+    numError = 0
     for j in range(numPoints):
         x = random.uniform(-1, 1)
         y = random.uniform(-1, 1)
@@ -104,6 +104,6 @@ def convergenceAndError(N, numRuns):
 
 #PLA(27, debug=True)
 
-(iterations, error) = convergenceAndError(10, 1000)
-print("Average number of iterations taken to converge on 10 data points is", iterations)
+(iterations, error) = convergenceAndError(100, 1000)
+print("Average number of iterations taken to converge on 100 data points is", iterations)
 print("Average error on 10 data points is", error)
